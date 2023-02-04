@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+          integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+          crossorigin=""/>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary g-0 bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <span class=" logo">
+
+        <img src="./public/img/fox-logo.png" height="30px" alt="" class="mb-1 logo-img"> FOX</span>
+      </a>
+
+
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav sec-nav">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="Laptop.html">Laptop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="phone.html">Phone</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Watch</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Other Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+     <div class="d-flex">
+
+         <div class="dropstart">
+
+             <i class=" bi bi-person  fs-5 fw-bolder" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"></i>
+           <form class="dropdown-menu p-3 ">
+             <div class="mb-3">
+               <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+               <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+             </div>
+             <div class="mb-3">
+               <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+               <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+             </div>
+             <div class="mb-3">
+               <div class="form-check">
+                 <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                 <label class="form-check-label" for="dropdownCheck2">
+                   Remember me
+                 </label>
+               </div>
+             </div>
+             <button type="submit" class="btn btn-primary">Sign in</button>
+           </form>
+         </div>
+
+       <div class="ms-4">
+         <i class="bi bi-cart position-relative fs-5 fw-bolder">
+           <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge">
+            0
+           </span>
+         </i>
+       </div>
+     </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid g-0">
+    <div class=" ">
+     <div class="title text-center vh-100 main-img">
+       <h6 class="title-small-para wel-para">WELCOME TO</h6>
+       <h1 class="title-para text-uppercase mt-4">Fox mobile phone & laptop</h1>
+       <a class=" title-btn  mt-5">
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         Learn More <i class=" bi bi-chevron-right"></i></a>
+     </div>
+    </div>
+  </div>
+
+
+
+
+
+<section class="">
+
+  <nav class="">
+    <div class="nav nav-tabs bg-light mt-5" id="nav-tab" role="tablist">
+      <button class="nav-link text-black active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">TOP SELLING PRODUCTS</button>
+      <button class="nav-link text-black" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-new" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">NEW PRODUCTS</button>
+
+    </div>
+  </nav>
+
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+      <div class="container ">
+        <div class="row best-caro">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="product-card ">
+                  <div class="main-images">
+                    <img  class="blue active text-center" src="https://cdn.shopify.com/s/files/1/0654/0630/4468/products/iPhone_14_Pro_Max_Space_Black_PDP_Image_Position-1A_Space_Black_Color_SEA_1024x1024.jpg?v=1662967586" alt="">
+                  </div>
+                  <div class="item-details mt-1">
+                    <span class="item_name">I Phone 14 Pro Max</span>
+
+                  </div>
+                  <div class="color-price mt-2">
+                    <div class="color-option">
+                      <span class="color">Color:</span>
+                      <div class="circles">
+                        <span class="circle blue active" ></span>
+                        <span class="circle pink " ></span>
+                        <span class="circle yellow " ></span>
+                      </div>
+                    </div>
+
+                    <div class="card-radio mt-2">
+                      <input type="radio"  name="gb" value="128Gb">
+                      <label >128 Gb</label><br>
+                      <input type="radio"  name="gb" value="512gb">
+                      <label >512 Gb</label><br>
+                      <input type="radio"  name="gb" value="1Tb">
+                      <label >1Tb</label>
+                    </div>
+
+                    <div class="price mt-2 d-flex justify-content-between">
+                      <span class="price_num pt-2"><span class="text-black-50 small">Price - </span> $1399</span>
+                      <div class="btn btn-light">
+                        <i class="bi bi-cart"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card ">
+                  <div class="main-images">
+                    <img  class="blue active text-center" src="https://cdn.shopify.com/s/files/1/0654/0630/4468/products/iPhone_14_Pro_Max_Space_Black_PDP_Image_Position-1A_Space_Black_Color_SEA_1024x1024.jpg?v=1662967586" alt="">
+                  </div>
+                  <div class="item-details mt-1">
+                    <span class="item_name">I Phone 14 Pro Max</span>
+
+                  </div>
+                  <div class="color-price mt-2">
+                    <div class="color-option">
+                      <span class="color">Color:</span>
+                      <div class="circles">
+                        <span class="circle blue active" ></span>
+                        <span class="circle pink " ></span>
+                        <span class="circle yellow " ></span>
+                      </div>
+                    </div>
+
+                    <div class="card-radio mt-2">
+                      <input type="radio"  name="gb" value="128Gb">
+                      <label >128 Gb</label><br>
+                      <input type="radio"  name="gb" value="512gb">
+                      <label >512 Gb</label><br>
+                      <input type="radio"  name="gb" value="1Tb">
+                      <label >1Tb</label>
+                    </div>
+
+                    <div class="price mt-2 d-flex justify-content-between">
+                      <span class="price_num pt-2"><span class="text-black-50 small">Price - </span> $1399</span>
+                      <div class="btn btn-light">
+                        <i class="bi bi-cart"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card ">
+                  <div class="main-images">
+                    <img  class="blue active text-center" src="https://cdn.shopify.com/s/files/1/0654/0630/4468/products/iPhone_14_Pro_Max_Space_Black_PDP_Image_Position-1A_Space_Black_Color_SEA_1024x1024.jpg?v=1662967586" alt="">
+                  </div>
+                  <div class="item-details mt-1">
+                    <span class="item_name">I Phone 14 Pro Max</span>
+
+                  </div>
+                  <div class="color-price mt-2">
+                    <div class="color-option">
+                      <span class="color">Color:</span>
+                      <div class="circles">
+                        <span class="circle blue active" ></span>
+                        <span class="circle pink " ></span>
+                        <span class="circle yellow " ></span>
+                      </div>
+                    </div>
+
+                    <div class="card-radio mt-2">
+                      <input type="radio"  name="gb" value="128Gb">
+                      <label >128 Gb</label><br>
+                      <input type="radio"  name="gb" value="512gb">
+                      <label >512 Gb</label><br>
+                      <input type="radio"  name="gb" value="1Tb">
+                      <label >1Tb</label>
+                    </div>
+
+                    <div class="price mt-2 d-flex justify-content-between">
+                      <span class="price_num pt-2"><span class="text-black-50 small">Price - </span> $1399</span>
+                      <div class="btn btn-light">
+                        <i class="bi bi-cart"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card ">
+                  <div class="main-images">
+                    <img  class="blue active text-center" src="https://cdn.shopify.com/s/files/1/0654/0630/4468/products/iPhone_14_Pro_Max_Space_Black_PDP_Image_Position-1A_Space_Black_Color_SEA_1024x1024.jpg?v=1662967586" alt="">
+                  </div>
+                  <div class="item-details mt-1">
+                    <span class="item_name">I Phone 14 Pro Max</span>
+
+                  </div>
+                  <div class="color-price mt-2">
+                    <div class="color-option">
+                      <span class="color">Color:</span>
+                      <div class="circles">
+                        <span class="circle blue active" ></span>
+                        <span class="circle pink " ></span>
+                        <span class="circle yellow " ></span>
+                      </div>
+                    </div>
+
+                    <div class="card-radio mt-2">
+                      <input type="radio"  name="gb" value="128Gb">
+                      <label >128 Gb</label><br>
+                      <input type="radio"  name="gb" value="512gb">
+                      <label >512 Gb</label><br>
+                      <input type="radio"  name="gb" value="1Tb">
+                      <label >1Tb</label>
+                    </div>
+
+                    <div class="price mt-2 d-flex justify-content-between">
+                      <span class="price_num pt-2"><span class="text-black-50 small">Price - </span> $1399</span>
+                      <div class="btn btn-light">
+                        <i class="bi bi-cart"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card ">
+                  <div class="main-images">
+                    <img  class="blue active text-center" src="https://cdn.shopify.com/s/files/1/0654/0630/4468/products/iPhone_14_Pro_Max_Space_Black_PDP_Image_Position-1A_Space_Black_Color_SEA_1024x1024.jpg?v=1662967586" alt="">
+                  </div>
+                  <div class="item-details mt-1">
+                    <span class="item_name">I Phone 14 Pro Max</span>
+
+                  </div>
+                  <div class="color-price mt-2">
+                    <div class="color-option">
+                      <span class="color">Color:</span>
+                      <div class="circles">
+                        <span class="circle blue active" ></span>
+                        <span class="circle pink " ></span>
+                        <span class="circle yellow " ></span>
+                      </div>
+                    </div>
+
+                    <div class="card-radio mt-2">
+                      <input type="radio"  name="gb" value="128Gb">
+                      <label >128 Gb</label><br>
+                      <input type="radio"  name="gb" value="512gb">
+                      <label >512 Gb</label><br>
+                      <input type="radio"  name="gb" value="1Tb">
+                      <label >1Tb</label>
+                    </div>
+
+                    <div class="price mt-2 d-flex justify-content-between">
+                      <span class="price_num pt-2"><span class="text-black-50 small">Price - </span> $1399</span>
+                      <div class="btn btn-light">
+                        <i class="bi bi-cart"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card ">
+                  <div class="main-images">
+                    <img  class="blue active text-center" src="https://cdn.shopify.com/s/files/1/0654/0630/4468/products/iPhone_14_Pro_Max_Space_Black_PDP_Image_Position-1A_Space_Black_Color_SEA_1024x1024.jpg?v=1662967586" alt="">
+                  </div>
+                  <div class="item-details mt-1">
+                    <span class="item_name">I Phone 14 Pro Max</span>
+
+                  </div>
+                  <div class="color-price mt-2">
+                    <div class="color-option">
+                      <span class="color">Color:</span>
+                      <div class="circles">
+                        <span class="circle blue active" ></span>
+                        <span class="circle pink " ></span>
+                        <span class="circle yellow " ></span>
+                      </div>
+                    </div>
+
+                    <div class="card-radio mt-2">
+                      <input type="radio"  name="gb" value="128Gb">
+                      <label >128 Gb</label><br>
+                      <input type="radio"  name="gb" value="512gb">
+                      <label >512 Gb</label><br>
+                      <input type="radio"  name="gb" value="1Tb">
+                      <label >1Tb</label>
+                    </div>
+
+                    <div class="price mt-2 d-flex justify-content-between">
+                      <span class="price_num pt-2"><span class="text-black-50 small">Price - </span> $1399</span>
+                      <div class="btn btn-light">
+                        <i class="bi bi-cart"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card ">
+                  <div class="main-images">
+                    <img  class="blue active text-center" src="https://cdn.shopify.com/s/files/1/0654/0630/4468/products/iPhone_14_Pro_Max_Space_Black_PDP_Image_Position-1A_Space_Black_Color_SEA_1024x1024.jpg?v=1662967586" alt="">
+                  </div>
+                  <div class="item-details mt-1">
+                    <span class="item_name">I Phone 14 Pro Max</span>
+
+                  </div>
+                  <div class="color-price mt-2">
+                    <div class="color-option">
+                      <span class="color">Color:</span>
+                      <div class="circles">
+                        <span class="circle blue active" ></span>
+                        <span class="circle pink " ></span>
+                        <span class="circle yellow " ></span>
+                      </div>
+                    </div>
+
+                    <div class="card-radio mt-2">
+                      <input type="radio"  name="gb" value="128Gb">
+                      <label >128 Gb</label><br>
+                      <input type="radio"  name="gb" value="512gb">
+                      <label >512 Gb</label><br>
+                      <input type="radio"  name="gb" value="1Tb">
+                      <label >1Tb</label>
+                    </div>
+
+                    <div class="price mt-2 d-flex justify-content-between">
+                      <span class="price_num pt-2"><span class="text-black-50 small">Price - </span> $1399</span>
+                      <div class="btn btn-light">
+                        <i class="bi bi-cart"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-new" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+      <div class="container ">
+        <div class="row best-caro">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="product-card ">
+                  <div class="main-images">
+                    <img  class="blue active text-center" src="https://cdn.shopify.com/s/files/1/0654/0630/4468/products/iPhone_14_Pro_Max_Space_Black_PDP_Image_Position-1A_Space_Black_Color_SEA_1024x1024.jpg?v=1662967586" alt="">
+                  </div>
+                  <div class="item-details mt-1">
+                    <span class="item_name">I Phone 14 Pro Max</span>
+
+                  </div>
+                  <div class="color-price mt-2">
+                    <div class="color-option">
+                      <span class="color">Color:</span>
+                      <div class="circles">
+                        <span class="circle blue active" ></span>
+                        <span class="circle pink " ></span>
+                        <span class="circle yellow " ></span>
+                      </div>
+                    </div>
+
+                    <div class="card-radio mt-2">
+                      <input type="radio"  name="gb" value="128Gb">
+                      <label >128 Gb</label><br>
+                      <input type="radio"  name="gb" value="512gb">
+                      <label >512 Gb</label><br>
+                      <input type="radio"  name="gb" value="1Tb">
+                      <label >1Tb</label>
+                    </div>
+
+                    <div class="price mt-2 d-flex justify-content-between">
+                      <span class="price_num pt-2"><span class="text-black-50 small">Price - </span> $1399</span>
+                      <div class="btn btn-light">
+                        <i class="bi bi-cart"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card ">
+                  <div class="main-images">
+                    <img  class="blue active text-center" src="https://cdn.shopify.com/s/files/1/0654/0630/4468/products/iPhone_14_Pro_Max_Space_Black_PDP_Image_Position-1A_Space_Black_Color_SEA_1024x1024.jpg?v=1662967586" alt="">
+                  </div>
+                  <div class="item-details mt-1">
+                    <span class="item_name">I Phone 14 Pro Max</span>
+
+                  </div>
+                  <div class="color-price mt-2">
+                    <div class="color-option">
+                      <span class="color">Color:</span>
+                      <div class="circles">
+                        <span class="circle blue active" ></span>
+                        <span class="circle pink " ></span>
+                        <span class="circle yellow " ></span>
+                      </div>
+                    </div>
+
+                    <div class="card-radio mt-2">
+                      <input type="radio"  name="gb" value="128Gb">
+                      <label >128 Gb</label><br>
+                      <input type="radio"  name="gb" value="512gb">
+                      <label >512 Gb</label><br>
+                      <input type="radio"  name="gb" value="1Tb">
+                      <label >1Tb</label>
+                    </div>
+
+                    <div class="price mt-2 d-flex justify-content-between">
+                      <span class="price_num pt-2"><span class="text-black-50 small">Price - </span> $1399</span>
+                      <div class="btn btn-light">
+                        <i class="bi bi-cart"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card ">
+                  <div class="main-images">
+                    <img  class="blue active text-center" src="https://cdn.shopify.com/s/files/1/0654/0630/4468/products/iPhone_14_Pro_Max_Space_Black_PDP_Image_Position-1A_Space_Black_Color_SEA_1024x1024.jpg?v=1662967586" alt="">
+                  </div>
+                  <div class="item-details mt-1">
+                    <span class="item_name">I Phone 14 Pro Max</span>
+
+                  </div>
+                  <div class="color-price mt-2">
+                    <div class="color-option">
+                      <span class="color">Color:</span>
+                      <div class="circles">
+                        <span class="circle blue active" ></span>
+                        <span class="circle pink " ></span>
+                        <span class="circle yellow " ></span>
+                      </div>
+                    </div>
+
+                    <div class="card-radio mt-2">
+                      <input type="radio"  name="gb" value="128Gb">
+                      <label >128 Gb</label><br>
+                      <input type="radio"  name="gb" value="512gb">
+                      <label >512 Gb</label><br>
+                      <input type="radio"  name="gb" value="1Tb">
+                      <label >1Tb</label>
+                    </div>
+
+                    <div class="price mt-2 d-flex justify-content-between">
+                      <span class="price_num pt-2"><span class="text-black-50 small">Price - </span> $1399</span>
+                      <div class="btn btn-light">
+                        <i class="bi bi-cart"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card ">
+                  <div class="main-images">
+                    <img  class="blue active text-center" src="https://cdn.shopify.com/s/files/1/0654/0630/4468/products/iPhone_14_Pro_Max_Space_Black_PDP_Image_Position-1A_Space_Black_Color_SEA_1024x1024.jpg?v=1662967586" alt="">
+                  </div>
+                  <div class="item-details mt-1">
+                    <span class="item_name">I Phone 14 Pro Max</span>
+
+                  </div>
+                  <div class="color-price mt-2">
+                    <div class="color-option">
+                      <span class="color">Color:</span>
+                      <div class="circles">
+                        <span class="circle blue active" ></span>
+                        <span class="circle pink " ></span>
+                        <span class="circle yellow " ></span>
+                      </div>
+                    </div>
+
+                    <div class="card-radio mt-2">
+                      <input type="radio"  name="gb" value="128Gb">
+                      <label >128 Gb</label><br>
+                      <input type="radio"  name="gb" value="512gb">
+                      <label >512 Gb</label><br>
+                      <input type="radio"  name="gb" value="1Tb">
+                      <label >1Tb</label>
+                    </div>
+
+                    <div class="price mt-2 d-flex justify-content-between">
+                      <span class="price_num pt-2"><span class="text-black-50 small">Price - </span> $1399</span>
+                      <div class="btn btn-light">
+                        <i class="bi bi-cart"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card ">
+                  <div class="main-images">
+                    <img  class="blue active text-center" src="https://cdn.shopify.com/s/files/1/0654/0630/4468/products/iPhone_14_Pro_Max_Space_Black_PDP_Image_Position-1A_Space_Black_Color_SEA_1024x1024.jpg?v=1662967586" alt="">
+                  </div>
+                  <div class="item-details mt-1">
+                    <span class="item_name">I Phone 14 Pro Max</span>
+
+                  </div>
+                  <div class="color-price mt-2">
+                    <div class="color-option">
+                      <span class="color">Color:</span>
+                      <div class="circles">
+                        <span class="circle blue active" ></span>
+                        <span class="circle pink " ></span>
+                        <span class="circle yellow " ></span>
+                      </div>
+                    </div>
+
+                    <div class="card-radio mt-2">
+                      <input type="radio"  name="gb" value="128Gb">
+                      <label >128 Gb</label><br>
+                      <input type="radio"  name="gb" value="512gb">
+                      <label >512 Gb</label><br>
+                      <input type="radio"  name="gb" value="1Tb">
+                      <label >1Tb</label>
+                    </div>
+
+                    <div class="price mt-2 d-flex justify-content-between">
+                      <span class="price_num pt-2"><span class="text-black-50 small">Price - </span> $1399</span>
+                      <div class="btn btn-light">
+                        <i class="bi bi-cart"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card ">
+                  <div class="main-images">
+                    <img  class="blue active text-center" src="https://cdn.shopify.com/s/files/1/0654/0630/4468/products/iPhone_14_Pro_Max_Space_Black_PDP_Image_Position-1A_Space_Black_Color_SEA_1024x1024.jpg?v=1662967586" alt="">
+                  </div>
+                  <div class="item-details mt-1">
+                    <span class="item_name">I Phone 14 Pro Max</span>
+
+                  </div>
+                  <div class="color-price mt-2">
+                    <div class="color-option">
+                      <span class="color">Color:</span>
+                      <div class="circles">
+                        <span class="circle blue active" ></span>
+                        <span class="circle pink " ></span>
+                        <span class="circle yellow " ></span>
+                      </div>
+                    </div>
+
+                    <div class="card-radio mt-2">
+                      <input type="radio"  name="gb" value="128Gb">
+                      <label >128 Gb</label><br>
+                      <input type="radio"  name="gb" value="512gb">
+                      <label >512 Gb</label><br>
+                      <input type="radio"  name="gb" value="1Tb">
+                      <label >1Tb</label>
+                    </div>
+
+                    <div class="price mt-2 d-flex justify-content-between">
+                      <span class="price_num pt-2"><span class="text-black-50 small">Price - </span> $1399</span>
+                      <div class="btn btn-light">
+                        <i class="bi bi-cart"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card ">
+                  <div class="main-images">
+                    <img  class="blue active text-center" src="https://cdn.shopify.com/s/files/1/0654/0630/4468/products/iPhone_14_Pro_Max_Space_Black_PDP_Image_Position-1A_Space_Black_Color_SEA_1024x1024.jpg?v=1662967586" alt="">
+                  </div>
+                  <div class="item-details mt-1">
+                    <span class="item_name">I Phone 14 Pro Max</span>
+
+                  </div>
+                  <div class="color-price mt-2">
+                    <div class="color-option">
+                      <span class="color">Color:</span>
+                      <div class="circles">
+                        <span class="circle blue active" ></span>
+                        <span class="circle pink " ></span>
+                        <span class="circle yellow " ></span>
+                      </div>
+                    </div>
+
+                    <div class="card-radio mt-2">
+                      <input type="radio"  name="gb" value="128Gb">
+                      <label >128 Gb</label><br>
+                      <input type="radio"  name="gb" value="512gb">
+                      <label >512 Gb</label><br>
+                      <input type="radio"  name="gb" value="1Tb">
+                      <label >1Tb</label>
+                    </div>
+
+                    <div class="price mt-2 d-flex justify-content-between">
+                      <span class="price_num pt-2"><span class="text-black-50 small">Price - </span> $1399</span>
+                      <div class="btn btn-light">
+                        <i class="bi bi-cart"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</section>
+
+
+
+
+  <section>
+
+    <div class="container mb-5" id="lists">
+      <div class="row">
+        <div class="col-6">
+          <div class="phone">
+           <div class="phone-list">
+
+            <div class="text-center ph-text">
+              <h2 class="phone-title">
+                Mobile Phone
+              </h2>
+                <a href="phone.html" class="ch-btn btn btn-primary mt-3">Click Here <i class="bi bi-hand-index"></i></a>
+
+            </div>
+           </div>
+
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="flex-column">
+            <div class="laptop">
+              <div class="phone-list">
+
+                <div class="text-center">
+                  <h2 class="phone-title">
+                    Laptop
+                  </h2>
+                  <a href="Laptop.html" class="ch-btn btn btn-primary mt-3">Click Here <i class="bi bi-hand-index"></i> </a>
+
+                </div>
+              </div>
+
+
+            </div>
+            <div class="watch">
+
+              <div class="phone-list">
+
+                <div class="text-center">
+                  <h2 class="phone-title">
+                    Watch
+                  </h2>
+                  <button class="ch-btn btn btn-primary mt-3">Click Here <i class="bi bi-hand-index"></i></button>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="d-flex justify-content-center vh-100 align-items-center chooseus">
+         <div class="choose text-center">
+           <h2 class="">Why FOX is the best place to buy Laptops and Phone.</h2>
+           <p class="mt-4 text-black-50 small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur esse expedita itaque obcaecati perspiciatis placeat repellendus vel, voluptate. Earum harum iste itaque iure provident quo, similique velit veritatis vero?</p>
+         </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-6">
+          <div class="">
+            <img src="https://www.smileswallet.com/wordpress/wp-content/uploads/2020/08/food-delivery-5217579_1280.png" alt="" class="deli-img">
+          </div>
+        </div>
+
+        <div class="col-5  deli vh-100">
+          <div class="">
+            <h1 class="display-4  deli-title text-uppercase">Deliv<span class="text-danger">er</span>y <br><span class="deli-title-2">S<span class="text-danger">er</span>vice</span></h1>
+            <p class="small text-black-50 deli-para ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores dolorem ea eligendi eum expedita fuga harum laudantium magnam maiores nesciunt pariatur porro provident quia repudiandae, sequi tempora tenetur, ut?</p>
+           <div class="">
+             <a href="" class="deli-lm">Learn More <i class="bi bi-arrow-right"></i></a>
+           </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="trade-in d-flex align-items-center">
+
+           <div class="w-50 ms-5">
+             <h1 class="">FOX Trade In</h1>
+             <p class="text-black-50 small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi libero nam nisi totam veritatis? Ab adipisci aliquam aperiam aspernatur dolore exercitationem fugit iure, mollitia natus officia possimus quas saepe soluta?</p>
+             <a href="" class="deli-lm">Learn More <i class="bi bi-arrow-right"></i></a>
+           </div>
+
+
+        </div>
+        <div class="col-7"></div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section>
+
+    <div class="container">
+      <div class="contact-us vh-100 position-relative">
+
+
+         <div class="contact-title ">
+           <div class="w-50 text-center mx-auto pt-4">
+             <h3 class="con-us">Contact Us</h3>
+             <p class="pt-2 small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur consequuntur deleniti dolore.</p></div>
+         </div>
+
+         <div class="contact-map">
+           <div id="map"></div>
+
+         </div>
+        <div class="contact-upper shadow-lg ">
+          <div class="row">
+            <div class="col-4 ">
+              <div class="text-center mt-4 p-2">
+                <img height="90px" class="pb-4" src="https://icon-library.com/images/address-icon/address-icon-19.jpg" alt="">
+                <h6 class="">Address :</h6>
+                <p class="mb-0 pt-2 small">University of Computer Studies, Pathein.</p>
+                <p class="mb-0 small pt-2">Kanne, Pathein, Ayeyarwaddy</p>
+
+              </div>
+
+            </div>
+
+            <div class="col-4 ">
+              <div class="text-center mt-4 p-2">
+                <img height="90px" class="pb-4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Circle-icons-mail.svg/2048px-Circle-icons-mail.svg.png" alt="">
+                <h6 class="">Email :</h6>
+                <p class="mb-0 small pt-2">foxmobile&laptop@gmail.com</p>
+                <p class="mb-0 small pt-2">abcd@gmail.com</p>
+
+              </div>
+
+            </div>
+
+            <div class="col-4 ">
+              <div class="text-center mt-4 p-2">
+                <img height="90px" class="pb-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTST_q2bCwR6XJy0P9WICd2lCht9q84qyHFOA&usqp=CAU" alt="">
+                <h6 class="">Phone No. :</h6>
+                <p class="mb-0 small pt-2">09-971-660639</p>
+                <p class="mb-0 small pt-2">09-798-166055</p>
+
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <section>
+    <div class="container-fluid bg-light mt-5 px-5 ">
+      <div class="row justify-content-evenly py-5 px-3 px-lg-0 ">
+        <div class="col-lg-3 col-6">
+          <ul class="list-unstyled" >
+            <li class="text-black fw-bold mb-2 fs-6 pt-2  ">Follow us across the internet</li>
+            <li class=""><a href="" class="social-list">Facebook</a></li>
+            <li class=""><a href="" class="social-list">Instagram</a></li>
+            <li class=""><a href="" class="social-list">Twitter</a></li>
+            <li class=""><a href="" class="social-list">Tik Tok</a></li>
+
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6">
+          <ul class="list-unstyled" >
+            <li class="text-black fw-bold mb-2 fs-6 pt-2  ">Services</li>
+            <li class=""><a href="" class="social-list">Delivery</a></li>
+            <li class=""><a href="" class="social-list">Trade In</a></li>
+            <li class=""><a href="" class="social-list">Fox Warranty</a></li>
+            <li class=""><a href="" class="social-list">Installment Plan</a></li>
+            <li class=""><a href="" class="social-list">Open Box Sale</a></li>
+
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6">
+          <ul class="list-unstyled" >
+            <li class="text-black fw-bold mb-2 fs-6 pt-2  ">Stores</li>
+            <li class=""><a href="" class="social-list">Fox Time City</a></li>
+            <li class=""><a href="" class="social-list">Fox Botahtaung In</a></li>
+            <li class=""><a href="" class="social-list">Fox Pathein</a></li>
+            <li class=""><a href="" class="social-list">Fox Mandalay</a></li>
+            <li class=""><a href="" class="social-list">Fox Mawlamyein</a></li>
+
+          </ul>
+        </div>
+        <div class="col-lg-4 col-6">
+          <ul class="list-unstyled" >
+            <li class="text-black fw-bold mb-2 fs-6 pt-2  ">Payment Options</li>
+            <li class=""><img src="https://isuremyanmar.com/wp-content/uploads/2022/10/isure_home_payment-2.webp" alt="" class="payment-img"></li>
+            
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  
+
+
+
+
+  </div>
+
+    <script type="module" src="/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+          crossorigin=""></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 5,
+      spaceBetween: 5,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    var map = L.map('map').setView([16.81775194049634, 94.73351570282804], 200);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([16.81775194049634, 94.73351570282804]).addTo(map)
+            .bindPopup('FOX Mobile Phone<br> And Laptop')
+            .openPopup();
+
+  </script>
+  </body>
+</html>

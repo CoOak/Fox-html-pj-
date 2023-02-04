@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,700&display=swap');
+
+@import "node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+
+
+
+
+
+$font-family: 'Open Sans', sans-serif;
+//font-family: 'Roboto', sans-serif;
+
+$nav-tabs-link-active-bg:green;
+$primary: #14bdad;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo{
+  color: coral;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.cart-badge{
+  font-size: 10px;
+
+}
+
+body{
+  background-color: rgba(255, 255, 255, 0.93);
+}
+
+.navbar{
+  padding: 1px 10px 1px 10px;
+}
+
+.navbar:hover{
+  .logo-img{
+    transform: rotate(360deg);
+    transition: 1s;
+  }
+}
+
+.nav-link{
+  color: #484747;
+  font-weight: bold;
+}
+.sec-nav{
+  display: flex;
+  margin: 0 auto;
+
+}
+.title{
+  padding-top: 150px;
+  color: white;
+}
+
+.title-para{
+  letter-spacing: 10px;
+  font-weight: bolder;
+  font-size: 46px;
+  font-family: 'Play', sans-serif;
+}
+
+.wel-para{
+  letter-spacing: 10px;
+  font-weight: bolder;
+  animation: text-shadow 1.5s ease-in-out infinite;
+  font-family: 'Play', sans-serif;
+}
+
+.wel-para:hover{
+  animation: paused;
+}
+@keyframes text-shadow {
+  0% {
+    transform: translateY(0);
+    text-shadow:
+            0 0 0 #0c2ffb,
+            0 0 0 #2cfcfd,
+            0 0 0 #fb203b,
+            0 0 0 #fefc4b;
+  }
+
+  20% {
+    transform: translateY(-1em);
+    text-shadow:
+            0 0.125em 0 #0c2ffb,
+            0 0.25em 0 #2cfcfd,
+            0 -0.125em 0 #fb203b,
+            0 -0.25em 0 #fefc4b;
+  }
+
+  40% {
+    transform: translateY(0.5em);
+    text-shadow:
+            0 -0.0625em 0 #0c2ffb,
+            0 -0.125em 0 #2cfcfd,
+            0 0.0625em 0 #fb203b,
+            0 0.125em 0 #fefc4b;
+  }
+
+  60% {
+    transform: translateY(-0.25em);
+    text-shadow:
+            0 0.03125em 0 #0c2ffb,
+            0 0.0625em 0 #2cfcfd,
+            0 -0.03125em 0 #fb203b,
+            0 -0.0625em 0 #fefc4b;
+  }
+
+  80% {
+    transform: translateY(0);
+    text-shadow:
+            0 0 0 #0c2ffb,
+            0 0 0 #2cfcfd,
+            0 0 0 #fb203b,
+            0 0 0 #fefc4b;
+  }
+}
+
+
+.title-btn{
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #f6f6f6;
+  text-decoration: none;
+
+
+  letter-spacing: 2px;
+  font-weight: bold;
+
+  font-size: 17px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.title-btn i{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+
+.title-btn:hover {
+  color: #000000;
+  background: #1dff52;
+  box-shadow: 0 0 10px #44fdbd, 0 0 40px #44fdbd, 0 0 80px #2196f3;
+  transition-delay: 1s;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+.title-btn span {
+  position: absolute;
+  display: block;
+}
+
+
+
+
+.title-btn span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #1dff52);
+}
+
+
+
+a:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+
+
+.title-btn span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #1dff52);
+}
+
+a:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+
+
+.title-btn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #1dff52);
+}
+
+.title-btn:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+
+
+.title-btn span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #1dff52);
+}
+
+.title-btn:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+
+
+.main-img{
+  background-image: url("https://www.apple.com/v/home/ay/images/heroes/macbook-pro-14-and-16/hero_mbp__fx6ku12vgw2m_large.jpg");
+  background-position: center;
+}
+///////////////////////////////////////
+
+
+.laptop-card{
+  background-color: white;
+  width: 48%;
+
+  padding:10px 10px 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+  margin-right: 8px;
+  margin-left: 9px;
+}
+
+.laptop-img{
+  height: 200px;
+
+}
+
+.laptop-card .main-images img.active{
+  opacity: 1;
+}
+.laptop-card .laptop-details .laptop_name{
+  font-size: 17px;
+  font-weight: 500;
+  color: #161616;
+}
+
+.laptop-card .color-price .color-option{
+  display: flex;
+  align-items: center;
+
+}
+
+.ram{
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.ram-radio label{
+  font-size: 12px;
+  font-weight: 500;
+  margin-right:  10px;
+  margin-left: 4px;
+  padding-top: 2.5px;
+
+}
+
+.laptop-card .button{
+  position: relative;
+  height: 35px;
+  width: 80%;
+  border-radius: 25px;
+  margin-top: 10px;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  margin-left: 10px;
+}
+.laptop-card .button .button-layer{
+  position: absolute;
+  height: 100%;
+  width: 300%;
+  left: -100%;
+  background-image: linear-gradient(135deg,#9708CC, #43CBFF,#9708CC, #43CBFF );
+  transition: all 0.4s ease;
+  border-radius: 25PX;
+}
+.laptop-card .button:hover .button-layer{
+  left: 0;
+}
+.laptop-card .button button{
+  position: relative;
+  height: 100%;
+  width: 80%;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.lm{
+  width: 90%;
+}
+.lm-btn{
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+}
+
+.processor select option{
+  font-size: 10px;
+
+}
+.processor select{
+font-size: 13px;
+  border: 0.5px solid gray;
+  background-color: #cdecff;
+}
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////
+.product-card {
+  position: relative;
+  max-width: 355px;
+  width: 83%;
+  border-radius: 10px;
+  padding: 0px 10px 15px 10px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  z-index: 3;
+  overflow: hidden;
+  transition: 0.3s;
+
+}
+
+.product-card:hover{
+  transform: scale(1.05);
+
+}
+
+
+
+
+
+.product-card .main-images{
+  position: relative;
+  height: 175px;
+  display: block;
+}
+.product-card .main-images img{
+  position: absolute;
+  height: 150px;
+  width: 170px;
+  object-fit: cover;
+  margin-top: 10px;
+  padding-left: 10px;
+
+
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.product-card .main-images img.active{
+  opacity: 1;
+}
+.product-card .item-details .item_name{
+  font-size: 17px;
+  font-weight: 500;
+  color: #161616;
+}
+
+.product-card .color-price .color-option{
+  display: flex;
+  align-items: center;
+
+}
+
+.color-price .color-option .color{
+  font-size: 13px;
+  font-weight: 500;
+  color: black;
+  margin-right: 8px;
+}
+.color-option  .circles{
+  display: flex;
+}
+.color-option  .circles .circle{
+  height: 13px;
+  width: 13px;
+  background: #171E27;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.color-option  .circles .circle.blue.active{
+  box-shadow: 0 0 0 2px #fff,
+  0 0 0 3px #171E27;
+}
+.color-option  .circles .circle.pink{
+  background: #B8AFE6;
+}
+.color-option  .circles .circle.pink.active{
+  box-shadow: 0 0 0 2px #fff,
+  0 0 0 4px #B8AFE6;
+}
+.color-option  .circles .circle.yellow{
+  background: #FAD7BD;
+}
+.color-option  .circles .circle.yellow.active{
+  box-shadow: 0 0 0 2px #fff,
+  0 0 0 4px #FAD7BD;
+}
+
+.color-price .price .price_num{
+  font-size: 15px;
+  font-weight: 600;
+  color: #707070;
+}
+
+.product-card .button{
+  position: relative;
+  height: 35px;
+  width: 100%;
+  border-radius: 25px;
+  margin-top: 20px;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+}
+.product-card .button .button-layer{
+  position: absolute;
+  height: 100%;
+  width: 310%;
+  left: -100%;
+  background-image: linear-gradient(135deg, #2fb687, #43CBFF, #214929, #43CBFF );
+  transition: all 0.4s ease;
+  border-radius: 25PX;
+}
+.product-card .button:hover .button-layer{
+  left: 0;
+}
+.product-card .button button{
+  position: relative;
+  height: 100%;
+  width: 80%;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+
+
+/////////////////////////////////////////////////
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.best-caro{
+  height: 80vh;
+}
+//////////////////////////////////////////////////////////////
+
+
+.phone{
+  background-color: #000000;
+  background-image: url("https://venturebeat.com/wp-content/uploads/2020/02/6b0eedb2-a9a7-43ec-8616-2604655f4892-e1581323682867.png?fit=750%2C422&strip=all");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size:500px 300px;
+  height: 500px;
+  font-family: 'Play', sans-serif;
+
+  border-radius: 15px;
+}
+
+.phone .ph-text{
+  padding-bottom: 90px;
+}
+
+.laptop{
+  background-color: #000000;
+  height: 240px;
+  border-radius: 15px;
+  background-image: url("https://www.siasat.com/wp-content/uploads/2022/01/MacBook-m2.jpg");
+  background-position: left;
+  background-size:450px 240px;
+  background-repeat: no-repeat;
+  font-family: 'Play', sans-serif;
+  font-weight: bolder;
+
+
+
+}
+
+
+
+.watch{
+  background-color: #000000;
+  height: 240px;
+  background-image: url("https://www.apple.com/v/watch/bb/images/overview/series-8/tile_s8__ck9oce5a22aa_large.jpg");
+  background-repeat: no-repeat;
+  background-size: 150px 240px;
+  background-position: 30px;
+  padding-left: 100px;
+  font-family: 'Play', sans-serif;
+
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+ .phone-list {
+  height: 100%;
+  display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+
+}
+
+ .phone-title{
+   color: white;
+   letter-spacing:10px;
+ }
+
+
+.ch-btn{
+
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: sans-serif;
+  background-color: #14bdad;
+  border: none;
+}
+/////////////////////////////////////
+
+
+.scroll-spy{
+  height: 200px;
+
+}
+
+.main-phone{
+  height: 100%;
+}
+
+.m-phone-list .nav-link{
+  color: black;
+  height: 80px;
+}
+
+/////////////
+
+.card-radio{
+  width: 250px;
+  display: flex;
+
+}
+.card-radio label{
+  font-size: 12px;
+  font-weight: 500;
+  margin-right:  10px;
+  margin-left: 4px;
+  padding-top: 2.5px;
+}
+
+.chooseus{
+  background-image: url("https://www.apple.com/v/iphone/home/bl/images/overview/retail/why_apple__ezn1ktvka6oi_large.jpg");
+  background-repeat: no-repeat;
+
+
+  background-position: center;
+  width: 1380px;
+  height: 560px;
+  background-size: 1380px 560px;
+
+
+}
+
+.choose{
+  width:40%;
+
+
+}
+
+////////////////////
+
+
+.deli{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 95px;
+
+}
+
+.deli-title{
+  letter-spacing: 8px;
+  font-weight:500;
+
+}
+
+.deli-para{
+  line-height: 2.3;
+  margin-top: 30px;
+
+  margin-bottom: 20px;
+}
+
+.deli-lm{
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 1.05rem;
+
+}
+
+.deli-img{
+
+ width: 120%;
+  margin-top: 70px;
+
+
+}
+
+.deli-title-2{
+  margin-left: 150px;
+}
+
+////////////////
+
+.trade-in{
+
+  background-image: url("https://images.samsung.com/is/image/samsung/assets/ae/offer/mobile_trade_in_2022_v3/images/main_kv/zfold4_pc.jpg?$ORIGIN_JPG$");
+  width: 1200px;
+  height: 500px;
+  background-size: 1200px 500px;
+  border-radius: 15px;
+}
+
+//////////////////
+
+
+
+#map {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+
+
+
+
+
+}
+
+.contact-us{
+
+  margin-top: 100px;
+
+
+}
+
+
+.contact-title{
+  height: 50%;
+
+  color: white;
+  z-index: -1;
+
+  background-color: #383636;
+}
+
+.contact-map{
+
+  height: 50%;
+
+
+
+}
+
+
+
+.contact-upper{
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  height: 260px;
+  z-index: 2 !important;
+  width: 80%;
+  margin:-450px auto;
+
+
+}
+
+//////////////////
+
+.social-list{
+  text-decoration: none;
+  color: #252525;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.payment-img{
+  height: 25px;
+}
